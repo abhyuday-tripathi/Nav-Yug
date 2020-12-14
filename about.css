@@ -1,0 +1,52 @@
+.text-hero {
+  position: absolute;
+  text-align: center;
+  width: 590px;
+  right: 130px;
+  top: 300px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.text-hero-two {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  position: absolute;
+  top: 700px;
+  width: 800px;
+  right: 250px;
+  text-align: center;
+  color: #444444;
+}
+
+.footer-hero {
+  width: 100%;
+  background: #000;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1500px;
+  height: 100px;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .text-hero {
+    top: 450px;
+  }
+  .heading-hero-2 {
+    width: 100%;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .text-hero-two {
+    right: 150px;
+    width: 350px;
+  }
+  .footer-hero {
+    top: 2000px;
+  }
+}

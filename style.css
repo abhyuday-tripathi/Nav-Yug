@@ -1,0 +1,207 @@
+/* 
+***************************************
+Copyright Nav-Yug Samajic Seva Snasthan
+All Rights Reserved
+***************************************
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: relative;
+  height: 10vh;
+  background: #5b78c7;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-link a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-link a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.logo {
+  color: white;
+  position: absolute;
+  left: 50px;
+  top: 20%;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+section {
+  height: 90vh;
+}
+
+.img-hero {
+  margin-left: 100px;
+  border-radius: 10px;
+  margin-top: 100px;
+}
+
+.heading-hero {
+  position: absolute;
+  right: 180px;
+  top: 210px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.heading-hero-2 {
+  position: absolute;
+  right: 500px;
+  top: 600px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.text-hero {
+  position: absolute;
+  text-align: center;
+  width: 590px;
+  right: 150px;
+  top: 300px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.bold-hero {
+  font-weight: 800;
+}
+
+.min-bold-hero {
+  font-weight: 600;
+}
+
+.btn {
+  padding: 10px 30px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  border: 2px solid #5b78c7;
+  background: #5b78c7;
+  color: #fff;
+  font-weight: 300;
+  position: absolute;
+  right: 400px;
+  top: 480px;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: #5b78c7;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-in-out;
+    pointer-events: none;
+  }
+
+  .nav-links.open {
+    pointer-events: all;
+    clip-path: circle(5000px at 90% 10%);
+    -webkit-clip-path: circle(5000px at 90% 10%);
+  }
+
+  .nav-link {
+    opacity: 0;
+  }
+
+  .nav-link a {
+    font-size: 25px;
+  }
+
+  .nav-link:nth-child(1) {
+    transition: all 0.2s ease 0.2s;
+  }
+
+  .nav-link:nth-child(2) {
+    transition: all 0.2s ease 0.4s;
+  }
+
+  .nav-link:nth-child(3) {
+    transition: all 0.2s ease 0.6s;
+  }
+
+  .nav-link.fade {
+    opacity: 1;
+  }
+
+  .img-hero {
+    position: absolute;
+    width: 300px;
+    top: 20px;
+    left: 75px;
+  }
+
+  .hero {
+    display: flex;
+  }
+
+  .heading-hero {
+    top: 350px;
+    right: 140px;
+    font-size: 20px;
+  }
+
+  .text-hero {
+    left: 30px;
+    top: 450px;
+  }
+
+  .btn {
+    display: none;
+  }
+}
