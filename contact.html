@@ -8,19 +8,23 @@
     <title>Nav Yug Samajic Seva Sansthan</title>
   </head>
   <body>
-    <form class="container">
+    <form
+      class="container"
+      action="https://formsubmit.co/tripathi.abhyuday2010@gmail.com"
+      method="POST"
+    >
       <h2>Contact Nav Yug Samajic Seva Sansthan</h2>
       <div class="row100">
         <div class="col">
           <div class="inputBox">
-            <input type="text" required />
+            <input type="text" required name="firstname" autocomplete="off" />
             <span class="text">First Name</span>
             <span class="line"></span>
           </div>
         </div>
         <div class="col">
           <div class="inputBox">
-            <input type="text" required />
+            <input type="text" required name="lastname" autocomplete="off" />
             <span class="text">Last Name</span>
             <span class="line"></span>
           </div>
@@ -29,14 +33,14 @@
       <div class="row100">
         <div class="col">
           <div class="inputBox">
-            <input type="email" required />
+            <input type="email" required name="email" />
             <span class="text">Email</span>
             <span class="line"></span>
           </div>
         </div>
         <div class="col">
           <div class="inputBox">
-            <input type="tel" required />
+            <input type="tel" required autocomplete="off" />
             <span class="text">Phone</span>
             <span class="line"></span>
           </div>
@@ -45,7 +49,7 @@
       <div class="row100">
         <div class="col">
           <div class="inputBox textarea">
-            <textarea required></textarea>
+            <textarea required name="message" autocomplete="off"></textarea>
             <span class="text">Type your message Here...</span>
             <span class="line"></span>
           </div>
@@ -56,6 +60,12 @@
           <input type="submit" value="Send" />
         </div>
       </div>
+      <input
+        type="hidden"
+        name="_autoresponse"
+        value="Hi! We have receied your Message. We will get to you soon And if we are in Promotions on span Section please mark us as NOT SPAM. Thank You"
+      />
+      <input type="hidden" name="_template" value="table" />
     </form>
   </body>
 </html>
