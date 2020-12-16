@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="projects.css" />
@@ -26,76 +26,26 @@
       </ul>
     </nav>
     <section>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div
-            class="swiper-slide"
-            style="background-image: url(fff.jpg)"
-          ></div>
-          <div
-            class="swiper-slide"
-            style="background-image: url(fff.jpg)"
-          ></div>
-          <div
-            class="swiper-slide"
-            style="background-image: url(fff.jpg)"
-          ></div>
-          <div
-            class="swiper-slide"
-            style="background-image: url(fff.jpg)"
-          ></div>
-          <div
-            class="swiper-slide"
-            style="background-image: url(fff.jpg)"
-          ></div>
-          <div
-            class="swiper-slide"
-            style="background-image: url(fff.jpg)"
-          ></div>
-          <div
-            class="swiper-slide"
-            style="background-image: url(fff.jpg)"
-          ></div>
-          <div
-            class="swiper-slide"
-            style="background-image: url(.fff.jpg)"
-          ></div>
-          <div
-            class="swiper-slide"
-            style="background-image: url(fff.jpg)"
-          ></div>
-          <div
-            class="swiper-slide"
-            style="background-image: url(./fff.jpg)"
-          ></div>
+      <div class="carousel-container">
+        <i class="fas fa-arrow-left" id="prevBtn"></i>
+        <i class="fas fa-arrow-right" id="nextBtn"></i>
+        <div class="carousel-slide">
+          <img width="1000" height="500" src="img5.jpg" id="lastClone" />
+          <img width="1000" height="500" src="img1.jpg" />
+          <img width="1000" height="500" src="img2.jpg" />
+          <img width="1000" height="500" src="img3.jpg" />
+          <img width="1000" height="500" src="img4.jpg" />
+          <img width="1000" height="500" src="img5.jpg" />
+          <img width="1000" height="500" src="img1.jpg" id="firstClone" />
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
       </div>
+      <footer class="footer-hero">
+        <p>
+          Copyright &copy; Nav Yug Samajic Seva Sansthan &reg; All Rights
+          Reserved.
+        </p>
+      </footer>
     </section>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper('.swiper-container', {
-        effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        coverflowEffect: {
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        },
-        autoplay: {
-          delay: 1000,
-          disableOnInteraction: false,
-        },
-        loop: true,
-        pagination: {
-          el: '.swiper-pagination',
-        },
-      });
-    </script>
+    <script src="projects.js"></script>
   </body>
 </html>
