@@ -8,10 +8,3 @@ hamburger.addEventListener('click', () => {
     link.classList.toggle('fade');
   });
 });
-
-// hamburger.addEventListener('click', () => {
-//   navLinks.classList.toggle('open');
-//   links.forEach((link) => {
-//     link.classList.toggle('fade');
-//   });
-// });
