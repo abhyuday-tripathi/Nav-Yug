@@ -4,7 +4,14 @@ const links = document.querySelectorAll('.nav-link');
 
 hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('open');
-  links.forEach(link => {
+  links.forEach((link) => {
     link.classList.toggle('fade');
   });
-  document.querySelector('section').style.display = 'none';
+});
+
+// hamburger.addEventListener('click', () => {
+//   navLinks.classList.toggle('open');
+//   links.forEach((link) => {
+//     link.classList.toggle('fade');
+//   });
+// });
