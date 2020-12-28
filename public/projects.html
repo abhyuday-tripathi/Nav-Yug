@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: #fff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .swiper-slide {
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+      }
+      h2 {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div
+          class="swiper-slide"
+          style="background-image: url(https://dummyimage.com/600x400/000/fff)"
+        >
+          <h2>Hello, World!</h2>
+        </div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(https://dummyimage.com/600x400/000/fff)"
+        >
+          <h2>Hello, World!</h2>
+        </div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(https://dummyimage.com/600x400/000/fff)"
+        >
+          <h2>Hello, World!</h2>
+        </div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(https://dummyimage.com/600x400/000/fff)"
+        >
+          <h2>Hello, World!</h2>
+        </div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(https://dummyimage.com/600x400/000/fff)"
+        >
+          <h2>Hello, World!</h2>
+        </div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(https://dummyimage.com/600x400/000/fff)"
+        >
+          <h2>Hello, World!</h2>
+        </div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(https://dummyimage.com/600x400/000/fff)"
+        >
+          <h2>Hello, World!</h2>
+        </div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(https://dummyimage.com/600x400/000/fff)"
+        >
+          <h2>Hello, World!</h2>
+        </div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(https://dummyimage.com/600x400/000/fff)"
+        >
+          <h2>Hello, World!</h2>
+        </div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(https://dummyimage.com/600x400/000/fff)"
+        >
+          <h2>Hello, World!</h2>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      const swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        loop: true,
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        keyboard: {
+          enabled: true,
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -45,7 +45,8 @@ All Rights Reserved
   color: white;
   position: absolute;
   left: 50px;
-  top: 20%;
+  top: 50%;
+  transform: translateY(-50%);
   text-decoration: none;
   font-size: 25px;
 }
@@ -117,6 +118,10 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .line {
     width: 30px;
     height: 3px;
@@ -124,8 +129,30 @@ section {
     margin: 5px;
   }
 
+  .img-hero {
+    margin-left: 8%;
+  }
+
+  .heading-hero {
+    width: 100%;
+    transform: translateX(6%);
+    left: 8%;
+    font-size: 18px !important;
+  }
+
+  .text-hero {
+    position: absolute;
+    font-size: 14px;
+    left: 8% !important;
+    width: 80%;
+  }
+
   .navbar {
     position: relative;
+  }
+
+  .logo {
+    font-size: 20px;
   }
 
   .hamburger {
